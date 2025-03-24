@@ -7,7 +7,7 @@ const Positions = () => {
 const [allPositions, setAllPostions] = useState([]);
 
 useEffect(()=>{
-  axios.get("http://localhost:3002/allPositions").then((res)=>{
+  axios.get("https://sbackend-wp2d.onrender.com/allPositions").then((res)=>{
     setAllPostions(res.data);
   })
 }, []);
